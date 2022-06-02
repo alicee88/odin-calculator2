@@ -1,18 +1,70 @@
 body {
     box-sizing: border-box;
+    height: 100vh;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    background-color: #003049;
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.calc {
     display: grid;
-    grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-template-columns: 75px 75px 75px 75px;
+    column-gap: 1px;
+    row-gap: 1px;
+    justify-items: center;
+    border: solid 10px #D62828;
+    border-top: solid 20px #D62828;
+    background-color: #FCBF49;
+    border-radius: 10px;
 }
 
 .display {
     grid-column: span 4;
-    border: 1px solid black;
-    height: 2rem;
+    height: 60px;
+    width: 300px;
+    font-size: 36px;
+    color: #003049;
+}
+
+button {
+    width: 75px;
+    height: 60px;
+    font-size: 24px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    border-radius: 5px;
+    color: #003049;
+    /* background-color: #F77F00; */
+    background-color: #EAE2B7;
+    border: 1px solid #003049;
+}
+
+button:hover {
+    box-shadow: 0px 0px 2px 1px #003049;
 }
 
 .selected {
-    background-color: yellowgreen;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.clr {
+    grid-column: span 2;
+}
+
+.clr button {
+    width: 150px;
+}
+
+.equals {
+    grid-column: span 2;
+}
+
+.equals button {
+    width: 150px;
 }
